@@ -136,9 +136,9 @@ public class IHMTestEnsembleTests extends junit.framework.TestCase{
         assertTrue(subComponents[1] instanceof JTextField);
         JTextField jt = (JTextField)subComponents[1];
         jt.setText(str);
-        // 		Point location = subComponents[1].getLocationOnScreen();
-        // 		mouseMoveAndClickClick(location.x,location.y);
-        // 		typeLine(str, robot, false);
+       		Point location = subComponents[1].getLocationOnScreen();
+       		mouseMoveAndClickClick(location.x,location.y);
+       	typeLine(str, robot, false);
     }
 
     private void placerPourE2(String str) throws Exception{
@@ -149,9 +149,9 @@ public class IHMTestEnsembleTests extends junit.framework.TestCase{
         assertTrue(subComponents[1] instanceof JTextField);
         JTextField jt = (JTextField)subComponents[1];
         jt.setText(str);		
-        // 		Point location = subComponents[1].getLocationOnScreen();
-        // 		mouseMoveAndClickClick(location.x,location.y);
-        // 		typeLine(str, robot, false);
+        		Point location = subComponents[1].getLocationOnScreen();
+       		mouseMoveAndClickClick(location.x,location.y);
+       	typeLine(str, robot, false);
     }
 
     private void unionE1_E2() throws Exception{
@@ -160,10 +160,10 @@ public class IHMTestEnsembleTests extends junit.framework.TestCase{
         Component[] subComponents = ((JPanel)components[2]).getComponents();
 
         assertTrue(" IHM a-t-elle été modifiée ?", subComponents[1] instanceof JButton);// union
-        // 		JButton union = ((JButton)subComponents[1]);
-        // 		ActionListener[] listeners = union.getActionListeners();
-        // 		assertTrue(listeners.length==1);
-        //     listeners[0].actionPerformed(null);
+       		JButton union = ((JButton)subComponents[1]);
+       		ActionListener[] listeners = union.getActionListeners();
+        		assertTrue(listeners.length==1);
+            listeners[0].actionPerformed(null);
 
         Point location = subComponents[1].getLocationOnScreen();
         mouseMoveAndClick(location.x+(subComponents[1].getWidth()/2),location.y+(subComponents[1].getHeight()/2));
@@ -175,10 +175,10 @@ public class IHMTestEnsembleTests extends junit.framework.TestCase{
         Component[] subComponents = ((JPanel)components[2]).getComponents();
 
         assertTrue(" IHM a-t-elle été modifiée ?", subComponents[2] instanceof JButton);// inter
-        // 		JButton inter = ((JButton)subComponents[2]);
-        // 		ActionListener[] listeners = inter.getActionListeners();
-        // 		assertTrue(listeners.length==1);
-        //     listeners[0].actionPerformed(null);
+        		JButton inter = ((JButton)subComponents[2]);
+        		ActionListener[] listeners = inter.getActionListeners();
+        		assertTrue(listeners.length==1);
+            listeners[0].actionPerformed(null);
 
         Point location = subComponents[2].getLocationOnScreen();
         mouseMoveAndClick(location.x+(subComponents[2].getWidth()/2),location.y+(subComponents[2].getHeight()/2));
@@ -190,10 +190,10 @@ public class IHMTestEnsembleTests extends junit.framework.TestCase{
         Component[] subComponents = ((JPanel)components[2]).getComponents();
 
         assertTrue(" IHM a-t-elle été modifiée ?", subComponents[3] instanceof JButton);// diff
-        // 		JButton diff = ((JButton)subComponents[3]);
-        // 		ActionListener[] listeners = diff.getActionListeners();
-        // 		assertTrue(listeners.length==1);
-        //     listeners[0].actionPerformed(null);
+        	JButton diff = ((JButton)subComponents[3]);
+         		ActionListener[] listeners = diff.getActionListeners();
+        	assertTrue(listeners.length==1);
+            listeners[0].actionPerformed(null);
 
         Point location = subComponents[3].getLocationOnScreen();
         mouseMoveAndClick(location.x+(subComponents[3].getWidth()/2),location.y+(subComponents[3].getHeight()/2));
@@ -205,10 +205,10 @@ public class IHMTestEnsembleTests extends junit.framework.TestCase{
         Component[] subComponents = ((JPanel)components[2]).getComponents();
 
         assertTrue(" IHM a-t-elle été modifiée ?", subComponents[4] instanceof JButton);// diffSym
-        // 		JButton diffSym = ((JButton)subComponents[4]);
-        // 		ActionListener[] listeners = diffSym.getActionListeners();
-        // 		assertTrue(listeners.length==1);
-        //     listeners[0].actionPerformed(null);
+     		JButton diffSym = ((JButton)subComponents[4]);
+    		ActionListener[] listeners = diffSym.getActionListeners();
+    		assertTrue(listeners.length==1);
+           listeners[0].actionPerformed(null);
         Point location = subComponents[4].getLocationOnScreen();
         mouseMoveAndClick(location.x+(subComponents[4].getWidth()/2),location.y+(subComponents[4].getHeight()/2));
     }
